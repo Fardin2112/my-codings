@@ -34,8 +34,9 @@ int main (){
 
      
    for(auto i:umap){
-    cout<<i.first<<"="<<i.second<<endl;
+    cout<<i.first<<"="<<i.second<<" ";
    }
+   cout<<endl;
 
 
    //count fun used to check wheter number presenet in map or not if 1 yes for 0 No.

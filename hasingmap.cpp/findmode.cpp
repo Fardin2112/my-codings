@@ -11,10 +11,11 @@ void Mode(int arr[],int n){
 
        for(int i=0;i<n;i++){
         map[arr[i]]++;
+        cout<<map[arr[i]];
         maxFreq=max(maxFreq,map[arr[i]]);
        }
 
-       cout<<"How many times Any element present in Array : "<<maxFreq<<endl;
+       // cout<<"How many times Any element present in Array : "<<maxFreq<<endl;
 
        for(int i=0;i<n;i++){
         // here i am comparing max mode with map elemenets if any element is equal time present in map then that is the ans
@@ -23,7 +24,7 @@ void Mode(int arr[],int n){
             break;
         }
        }
-       cout<<"The Element which present "<<maxFreq<<" in array is :"<<MaxAns<<endl;
+      // cout<<"The Element which present "<<maxFreq<<" time in array is :"<<MaxAns<<endl;
  }
 
 int main (){

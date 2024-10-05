@@ -9,7 +9,7 @@ int closeToLeft(vector<int>A,int target){
     while(first<=last){
         long mid=first+(last-first)/2;
         if(A[mid]<target){
-            return 
+            return 0;
         }
         else if(A[mid]>target){
             last=mid-1;

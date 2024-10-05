@@ -8,7 +8,7 @@ using namespace std;
         for(int j=0; j<nums.size(); j++){
             //  ye key avilaible hai key nahi search kar rha hai
             if(mp.count(nums[j])){
-                return {j,mp[nums[j]]};
+                return {mp[nums[j]],j};
             }
             else{ 
                 // aur yha value insert ho rha hai map mai
@@ -19,11 +19,9 @@ using namespace std;
     }
 int main(){
     vector<int> nums = {2,8,12,7};
-    int target=9;
+    int target=20;
     vector<int>ans=twoSum(nums,target);
     cout<<ans[0]<<" "<<ans[1]<<endl;
-
-
 
     return 0;
 }
