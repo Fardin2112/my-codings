@@ -60,6 +60,7 @@ string binarySum (string A,string B) {
     if (carry == '1') {
             result.push_back('1');
     }
+    cout<<result<<endl;
     reverse(result.begin(),result.end());
 
    // if you want no zero in prefix then use this 

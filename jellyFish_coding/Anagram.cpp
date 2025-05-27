@@ -19,7 +19,7 @@ bool isAnagram2(string s, string t) {
     for(int i=0;i<s.size();i++){
         map[s[i]]++;
     }
-        for(int i=0;i<t.size();i++){
+    for(int i=0;i<t.size();i++){
         map[t[i]]--;
     }
     for (auto x : map){
@@ -34,8 +34,8 @@ bool isAnagram2(string s, string t) {
 bool isAnagram3(string s, string t) {
     int count[26] = {0};
 
-    for (char x : s){
-        count[x - 'a']++;
+    for (int i=0; i<s.size(); i++){
+        cout<<count[s[i] - 'a']++<<endl;;
     }
     for (char x : t){
         count[x - 'a']--;
